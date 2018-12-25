@@ -1,0 +1,52 @@
+/**
+ * Auth: lijiang
+ * Description: {{rpcDesc}}
+ */
+import {Base} from '@/framework/common/Base';
+import {{{rpcName}}Request} from './{{rpcName}}Request';
+import RpcRequestProtocol from '@/api/RpcRequestProtocol';
+
+const __request = Symbol('__request');
+
+/**
+ *{{comments}}
+ * @returns {*}
+ * @constructor
+ */
+export class {{rpcName}} extends Base {
+  static METHOD = '{{rpcMethod}}';
+  static RPC_TYPE = '{{rpcType}}';
+
+  pluginInit () {
+    this[__request] = new {{rpcName}}Request();
+    this.registerProtocol(RpcRequestProtocol);
+  }
+
+  request ({{params}}) {
+    this[__request].initFromArray({{{data}}
+    });
+    this[__request].typeCheck();
+
+    return this.doRequest(this[__request].toParams());
+  }
+
+  getMethod () {
+    return {{rpcName}}.METHOD;
+  }
+
+  getRpcType () {
+    return {{rpcName}}.RPC_TYPE;
+  }
+
+  originName () {
+    return '{{rpcName}}';
+  }
+
+  needAuth () {
+    return {{needAuth}};
+  }
+
+  getScope () {
+    return '{{rpcScope}}';
+  }
+}

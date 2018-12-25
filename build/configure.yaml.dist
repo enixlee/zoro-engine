@@ -1,0 +1,33 @@
+BASE_CONFIGURE: {
+  RPC: {
+    RPC_API_PATH: "/src/api/Template",
+    RPC_API_ERROR_CODE_PATH: "/src/api/Template/ErrorCode/",
+    RPC_API_ERROR_CODE_TEMPORARY_STORAGE_PATH: "/static/ErrorCodeTemplate/",
+    RPC_COMPILE: {
+      CMD: "php vendor/bin/zeus codeGenerate:vueRpcExport",
+      PARAMS: {
+        USE_FULL_PATH: true
+      }
+    },
+  },
+  RESOURCE_COMPILE: {
+    CSV: {
+      PROJECT_SAVE_PATH: "/src/external/resource/csv/"
+    }
+  }
+}
+CUSTOM_CONFIGURE: {
+  RPC: {
+    CODE_TEMPLATE_NAME: "code-template-zhongbai",
+    CODE_TEMPLATE_GIT: "https://gitlab.paymini.com.cn/lijiang/code-template-zhongbai.git",
+    CODE_TEMPLATE_PATH: "/CodeTemplates/Rpc/SDKZhongBai",
+    COMPOSER_UPDATE_AFTER_PULL: true
+  },
+  RESOURCE_COMPILE: {
+    CSV: {
+      CSV_PROJECT_NAME: "zhongbai-csv",
+      CSV_GIT: "https://gitlab.paymini.com.cn/productor/zhongbai-csv.git",
+      CSV_TEMPLATE_PATH: "Csv"
+    }
+  }
+}

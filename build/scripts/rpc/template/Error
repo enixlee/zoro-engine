@@ -1,0 +1,7 @@
+/**
+ * Auth: lijiang
+ * Description: {{rpcDesc}}
+ * FileName: {{fileName}}
+ */
+export default {{{errorCodes}}
+};

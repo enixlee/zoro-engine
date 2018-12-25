@@ -1,0 +1,27 @@
+{IMPORT}
+
+export class {ObjectName} extends {PARENT} {
+  init () {
+    this.setVersion({VERSION});
+  }
+
+  tableCls () {
+    return {ObjectName};
+  }
+
+  originName () {
+    return 'model.{ObjectName}';
+  }
+
+{PARAM_COMMENTS}
+  data () {
+    let myData = {
+{DATA}
+    };
+    let data = super.data();
+    this.__lodash.map(data, (v, k) => {
+      myData[k] = v;
+    });
+    return myData;
+  }{OBJECT_MAP}
+}

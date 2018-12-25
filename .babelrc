@@ -1,0 +1,35 @@
+{
+  "presets": [
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "stage-2"
+  ],
+  "plugins": [
+    [
+      "component",
+      [
+        {
+          "libraryName": "muse-ui",
+          "style": true
+        },
+        {
+          "libraryName": "element-ui",
+          "styleLibraryName": "theme-chalk"
+        }
+      ]
+    ],
+    "transform-runtime"
+  ],
+  "comments": false,
+  "env": {
+    "test": {
+      "plugins": [
+        "istanbul"
+      ]
+    }
+  }
+}

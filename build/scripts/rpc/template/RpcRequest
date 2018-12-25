@@ -1,0 +1,22 @@
+/**
+ * Auth: lijiang
+ * Description: {{rpcDesc}}
+ */
+import {ModelBase} from '@/store/Model/ModelBase';
+
+export class {{rpcName}}Request extends ModelBase {
+  data () {
+    return {{{dataInit}}
+    };
+  }
+
+  typeCheck () {
+{{typeCheck}}
+  }
+
+  toParams () {
+    let params = {};
+{{initParams}}
+    return params;
+  }
+}

@@ -1,0 +1,8 @@
+build/*.js
+build/scripts/*.js
+config/*.js
+.env
+.env.public.test
+src/api/rpc/*.js
+src/store/Model/objects/*.js
+src/framework/plugins/Miment.js
