@@ -9,11 +9,15 @@ import {ENGINE_ENV_DEBUG, ENGINE_ENV_TEST, ENGINE_ENV_PRODUCT} from '../constant
 const __env = Symbol('__env');
 
 const __cache = Symbol('__cache');
-const ENV_CACHE_KEY = 'bala_manage_console_env';
+const ENV_CACHE_KEY = 'env';
+
+function getStorageKey () {
+  return (this.getEngine().env('PROJECT_NAME') || '') + `_${ENV_CACHE_KEY}`;
+}
 
 function setKey (key, value) {
   this[__cache][key] = value;
-  this.getEngine().$storage.setItem(ENV_CACHE_KEY, this[__cache]);
+  this.getEngine().$storage.setItem(getStorageKey.call(this), this[__cache]);
 }
 
 export class Env extends Base {
@@ -31,7 +35,7 @@ export class Env extends Base {
   }
 
   loadFromCache () {
-    this[__cache] = this.getEngine().$storage.getItem(ENV_CACHE_KEY, {
+    this[__cache] = this.getEngine().$storage.getItem(getStorageKey.call(this), {
       RES_VERSION: this.getEngine().env('RES_VERSION'),
       CONFIG_VERSION: this.getEngine().env('CONFIG_VERSION'),
       WEB_VERSION: this.getEngine().env('WEB_VERSION')

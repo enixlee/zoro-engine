@@ -7,12 +7,12 @@
  * 名称
  * @type {string}
  */
-export const ENGINE_NAME = 'Bala';
+export const ENGINE_NAME = 'Zoro';
 /**
  * 引擎版本
  * @type {string}
  */
-export const ENGINE_VERSION = '0.0.1';
+export const ENGINE_VERSION = '1.0.0';
 /**
  * 开发环境
  * @type {string}

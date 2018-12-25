@@ -5,36 +5,20 @@
   "author": "lijiang <lijiang@66plat.com>",
   "private": true,
   "scripts": {
-    "dev": "node build/scripts/make.js && node build/dev-server.js",
-    "build": "node build/scripts/make.js && node build/build.js",
-    "debug": "node build/scripts/make.js && node build/debug.js",
-    "upload": "node build/scripts/upload/upload.js",
-    "make": "node build/scripts/make.js",
-    "lint": "eslint --ext .js,.vue src"
+    "compile": "babel src -d lib"
   },
   "dependencies": {
     "axios": "^0.16.1",
     "crypto-js": "^3.1.9-1",
-    "echarts": "^4.2.0-rc.2",
-    "element-ui": "^2.4.1",
-    "fingerprintjs2": "^1.5.1",
-    "flex.css": "^1.1.6",
     "lodash": "^4.17.4",
-    "muse-ui": "^2.1.0",
-    "normalize.css": "^7.0.0",
-    "npm": "^6.1.0",
     "qs": "^6.5.0",
     "sprintf-js": "^1.0.3",
     "store": "^2.0.12",
-    "v-charts": "^1.19.0",
     "vue": "^2.5.16",
     "vue-i18n": "^7.0.3",
-    "vue-router": "^3.0.1",
-    "vue-template-compiler": "^2.5.16",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "ali-oss": "^6.0.1",
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
