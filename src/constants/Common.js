@@ -12,7 +12,7 @@ export const ENGINE_NAME = 'Zoro';
  * 引擎版本
  * @type {string}
  */
-export const ENGINE_VERSION = '1.0.0';
+export const ENGINE_VERSION = '1.0.2';
 /**
  * 开发环境
  * @type {string}
