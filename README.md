@@ -1,22 +1,21 @@
-# zoro-engine
+# web or h5 app framework base on vue.js 2.0
 
-> web开发framework
+> Basically, this framework aim to building an app or a website conveniently.
 
-## Build Setup
+## project description
 
-``` bash
-# install dependencies
-npm install
+> this framework is build for web project, it includes all the base service of enixlee, like:
+-   router : static , dynamic, remote
+-   ui components
+-   encrypto
+-   data manage 
+-   data persistence
+-   i18n
+-   register module dynamic
+-   rpc template, rpc adapter
+-   and so on
 
-# compile rpc template
-npm run compile
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+## publish project
+-   modify version in package.json
+-   compile src:    `npm run compile`
+-   publish src:    `npm publish`
