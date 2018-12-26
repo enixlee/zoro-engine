@@ -3,7 +3,7 @@
  * Date: 2018/8/13
  * Description: RpcRequest
  */
-import {createResponse, RpcCommandResult} from '@/framework/rpc/RpcCommandResult';
+import {createResponse, RpcCommandResult} from './RpcCommandResult';
 
 const RpcRequestProtocol = {
   getMethod () {

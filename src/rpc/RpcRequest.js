@@ -3,10 +3,10 @@
  * Date: 2018/8/22
  * Description: RpcRequest
  */
-import {ModelBase} from '@/store/Model/ModelBase';
+import {ZoroModelBase} from '../store/model/ZoroModelBase';
 import RpcRequestProtocol from './RpcRequestProtocol';
 
-export class RpcRequest extends ModelBase {
+export class RpcRequest extends ZoroModelBase {
   init () {
     this.registerProtocol(RpcRequestProtocol);
   }

@@ -1,6 +1,6 @@
 {
   "name": "zoro-engine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "web framework based on Vue.js 2.0",
   "author": "enixlee <enix_lee@163.com>",
   "main": "main.js",

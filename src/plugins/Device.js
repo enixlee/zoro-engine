@@ -11,7 +11,7 @@ export class Device extends Base {
   }
 
   originName () {
-    return 'framework.Device';
+    return 'engine.Device';
   }
 
   versions () {

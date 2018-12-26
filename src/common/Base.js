@@ -28,7 +28,7 @@ export class Base {
     this.__lodash = engine.$lodash;
     this[__balaId] = null;
     if (engine.$idGenerator) {
-      this[__balaId] = engine.$idGenerator.generateId('BalaObject');
+      this[__balaId] = engine.$idGenerator.generateId('ZoroObject');
     }
 
     this.pluginInit();

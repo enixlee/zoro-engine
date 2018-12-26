@@ -5,4 +5,4 @@ config/*.js
 .env.public.test
 src/api/rpc/*.js
 src/store/Model/objects/*.js
-src/framework/plugins/Miment.js
+src/plugins/Miment.js
