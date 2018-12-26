@@ -1,0 +1,9 @@
+build/*.js
+config/*.js
+node_modules/
+src/
+.idea/
+.babelrc
+.eslintignore
+.eslintrc.js
+.npmignore
