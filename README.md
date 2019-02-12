@@ -4,11 +4,11 @@
 
 ## project description
 
-> this framework is build for web project, it includes all the base service of enixlee, like:
+> this framework is build for web project, it includes all base services needed by a website, like:
 -   router : static , dynamic, remote
 -   ui components
 -   encrypto
--   data manage 
+-   data manage
 -   data persistence
 -   i18n
 -   register module dynamic
